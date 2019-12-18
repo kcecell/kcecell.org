@@ -23,13 +23,19 @@ function Navbar() {
         <ul className="menu">
           {menus.map(menu => {
             return (
-              <Link
-                style={{ textDecoration: "none", textAlign: "center" }}
-                key={menu.id}
-                to={menu.url}
-              >
-                <li className="menu-list">{menu.menuName}</li>
-              </Link>
+              <li className="menu-list">
+                <Link
+                  style={{
+                    textDecoration: "none",
+                    textAlign: "center",
+                    color: "#000",
+                  }}
+                  key={menu.id}
+                  to={menu.url}
+                >
+                  {menu.menuName}
+                </Link>
+              </li>
             )
           })}
         </ul>
