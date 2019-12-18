@@ -1,0 +1,109 @@
+/* Slideshow container */
+.slideshowContainer {
+  text-align: center;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 10%;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 10%;
+  border-radius: 3px 0 0 3px;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.carouselImage {
+  max-height: 80vh;
+  max-width: 80vw;
+}
+
+/* mobile */
+@media (max-width: 475px) {
+  .carouselImage {
+    max-height: 100vh;
+    max-width: 100vw;
+  }
+}
+
+/* ipad */
+@media (max-width: 768px) {
+  .carouselImage {
+    max-height: 90vh;
+    max-width: 90vw;
+  }
+  .next {
+    right: 5%;
+  }
+  .prev {
+    left: 5%;
+  }
+}
+
+/* ipad pro */
+@media (max-width: 1024px) {
+  .carouselImage {
+    max-height: 98vh;
+    max-width: 98vw;
+  }
+  .next {
+    right: 1%;
+  }
+  .prev {
+    left: 1%;
+  }
+}

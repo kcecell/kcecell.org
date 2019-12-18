@@ -1,0 +1,43 @@
+.campusActivities {
+  margin-top: 80px;
+}
+
+.cardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 18rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid #cfcfcf;
+  padding-bottom: 11px;
+  margin: 20px 0px;
+}
+
+.cardImage {
+  width: 100%;
+  border-bottom: 1px solid #76eea7;
+}
+
+.date {
+  align-self: left;
+  color: #666;
+}
+
+/* phone */
+@media (max-width: 475px) {
+  .cardContainer {
+    flex-direction: column;
+  }
+  .card {
+    margin-top: 30px;
+  }
+}
