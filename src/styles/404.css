@@ -1,7 +1,7 @@
 .box {
   width: 100%;
   height: 100%;
-  background: #332f63;
+  background: #06061b;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -141,7 +141,7 @@
 .box .box__ghost .box__ghost-container .box__ghost-eyes .box__eye-left {
   width: 12px;
   height: 12px;
-  background: #332f63;
+  background: #201f2f;
   border-radius: 50%;
   margin: 0 10px;
   position: absolute;
@@ -150,7 +150,7 @@
 .box .box__ghost .box__ghost-container .box__ghost-eyes .box__eye-right {
   width: 12px;
   height: 12px;
-  background: #332f63;
+  background: #201f2f;
   border-radius: 50%;
   margin: 0 10px;
   position: absolute;
@@ -179,7 +179,7 @@
 }
 .box .box__ghost .box__ghost-shadow {
   height: 20px;
-  box-shadow: 0 50px 15px 5px #3b3769;
+  box-shadow: 0 50px 15px 5px #201f2f;
   border-radius: 50%;
   margin: 0 auto;
   animation: smallnbig 3s ease-in-out infinite;
