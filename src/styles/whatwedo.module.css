@@ -1,11 +1,13 @@
 .main {
   margin-top: 60px;
 }
-
-.header {
-  font-weight: 600;
+.cardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-
 .card {
   width: 14rem;
   text-align: center;
@@ -13,24 +15,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  font-size: 1.1rem;
+  line-height: 1.5;
   padding-bottom: 11px;
   margin: 20px 0px;
 }
-
 .cardImage {
   width: 80%;
   height: 150px;
   width: 150px;
 }
-
 .cardContent {
-  line-height: 1.5;
-}
-
-.cardContainer {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: row;
-  flex-wrap: wrap;
+  text-align: justify;
 }

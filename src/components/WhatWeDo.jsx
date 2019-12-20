@@ -1,13 +1,14 @@
 import React from "react"
 import img from "../images/idea.png"
 import styles from "../styles/whatwedo.module.css"
+import Header from "./Header"
 
 const Card = () => {
   return (
     <section className={styles.card}>
       <img className={styles.cardImage} src={img} alt="data" />
-      <section className={styles.info}>
-        <p className={styles.cardHeader}>ELEVATING NEW IDEAS</p>
+      <section>
+        <p>CONDUCTING WORKSHOPS</p>
         <p className={styles.cardContent}>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo eos
           maiores delectus voluptatibus nobis ratione, laudantium corporis
@@ -21,7 +22,7 @@ const WhatWeDo = () => {
   return (
     <section className={styles.main}>
       <section>
-        <h2 className={styles.header}>What We Do</h2>
+        <Header headerText={"What We Do"} />
       </section>
       <section className={styles.cardContainer}>
         <Card />

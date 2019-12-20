@@ -1,10 +1,11 @@
 import React from "react"
 import aboutStyles from "../styles/about.module.css"
+import Header from "./Header"
 
 const About = () => {
   return (
     <section className={aboutStyles.main}>
-      <p className={aboutStyles.header}>Ecell</p>
+      <Header headerText={"Ecell"} />
       <p className={aboutStyles.content}>
         We believe that entrepreneurship is not just about starting companies,
         but a pathway towards India’s socioeconomic development. Our vision is

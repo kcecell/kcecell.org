@@ -1,7 +1,6 @@
 .campusActivities {
-  margin-top: 80px;
+  margin-top: 60px;
 }
-
 .cardContainer {
   display: flex;
   align-items: center;
@@ -9,8 +8,8 @@
   flex-direction: row;
   flex-wrap: wrap;
 }
-
 .card {
+  line-height: 1.5;
   width: 18rem;
   text-align: center;
   display: flex;
@@ -21,14 +20,11 @@
   padding-bottom: 11px;
   margin: 20px 0px;
 }
-
 .cardImage {
   width: 100%;
   border-bottom: 1px solid #76eea7;
 }
-
 .date {
-  align-self: left;
   color: #666;
 }
 
