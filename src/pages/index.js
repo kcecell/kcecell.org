@@ -4,10 +4,12 @@ import Carousel from "../components/Carousel"
 import Activities from "../components/Activities"
 import About from "../components/About"
 import WhatWeDo from "../components/WhatWeDo"
+import SEO from "../components/SEO"
 
 export default () => {
   return (
     <Layout>
+      <SEO title={"Home - KC Enterpreneurship Cell"} />
       <Carousel />
       <About />
       <WhatWeDo />
