@@ -3,6 +3,8 @@ import footerStyles from "../styles/footer.module.css"
 import linkedinLogo from "../images/linkedin-logo.png"
 import instagramLogo from "../images/instagram-logo.png"
 import facebookLogo from "../images/facebook-logo.png"
+import emailLogo from "../images/email-logo.png"
+import { Link } from "gatsby"
 
 const Logo = ({ link, img, alt }) => {
   return (
@@ -33,6 +35,9 @@ const Footer = () => {
           img={linkedinLogo}
           alt={"in"}
         />
+        <Link style={{ margin: "0px 15px" }} to="/contact">
+          <img src={emailLogo} alt="Email" />
+        </Link>
       </section>
       <p className={footerStyles.text}>
         WebDev Team KC Ecell © 2019 | KC Ecell.
