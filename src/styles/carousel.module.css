@@ -78,6 +78,11 @@
     max-height: 100vh;
     max-width: 100vw;
   }
+  .prev,
+  .next {
+    font-size: 14px;
+    padding: 12px;
+  }
 }
 
 /* ipad */
