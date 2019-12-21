@@ -1,13 +1,15 @@
 .container {
-  height: 80px;
   color: #cac0c0;
   background-color: #2b2b52;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  padding-top: 1.3rem;
 }
-
-.text {
-  text-align: center;
-  flex: 1;
-  align-self: center;
+.logoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.logo {
+  margin: 0px 15px;
 }
