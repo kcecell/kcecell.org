@@ -11,21 +11,24 @@
 .card {
   line-height: 1.5;
   width: 18rem;
-  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
   border: 1px solid #cfcfcf;
   padding-bottom: 11px;
   margin: 20px 0px;
 }
 .cardImage {
-  width: 100%;
-  border-bottom: 1px solid #76eea7;
+  max-width: 100%;
+}
+.cardHeader {
+  font-size: 17px;
+  font-weight: 500;
+  padding: 0px 1px;
 }
 .date {
+  font-size: 0.9rem;
   color: #666;
+  font-style: italic;
 }
 
 /* phone */

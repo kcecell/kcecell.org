@@ -1,33 +1,61 @@
 import React from "react"
-import img from "../images/dummy.png"
-import { Link } from "gatsby"
-import activityStyles from "../styles/activities.module.css"
+import Img from "gatsby-image"
+import { Link, graphql, useStaticQuery } from "gatsby"
 import Header from "./Header"
+import activityStyles from "../styles/activities.module.css"
 
-const Card = () => {
+const Card = ({ image, title, date, slug }) => {
   return (
     <section className={activityStyles.card}>
-      <img className={activityStyles.cardImage} src={img} alt="data" />
+      <Img className={activityStyles.cardImage} fixed={image} />
       <section>
-        <p>SEMINAR/WORKSHOP ON “AI AND CYBERSECURITY”</p>
-        <p className={activityStyles.date}>October 18, 2019</p>
+        <h4 className={activityStyles.cardHeader}>{title}</h4>
+        <p className={activityStyles.date}>Date: {date}</p>
       </section>
       <section>
-        <Link to="/events">Read More</Link>
+        <Link to={`${slug}`}>Read More</Link>
       </section>
     </section>
   )
 }
 
 const Activities = () => {
+  const data = useStaticQuery(
+    graphql`
+      query {
+        allEventsJson(sort: { fields: eventNum, order: DESC }, limit: 4) {
+          edges {
+            node {
+              title
+              date
+              slug
+              image {
+                childImageSharp {
+                  fixed(width: 288, height: 266) {
+                    ...GatsbyImageSharpFixed
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    `
+  )
+
   return (
     <section className={activityStyles.campusActivities}>
       <Header headerText={"Campus Activities"} />
       <section className={activityStyles.cardContainer}>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {data.allEventsJson.edges.map(({ node }) => (
+          <Card
+            key={node.slug}
+            title={node.title}
+            date={node.date}
+            slug={node.slug}
+            image={node.image.childImageSharp.fixed}
+          />
+        ))}
       </section>
     </section>
   )
