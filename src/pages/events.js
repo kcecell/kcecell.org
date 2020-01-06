@@ -15,7 +15,9 @@ const Card = ({ image, title, date, slug }) => {
         <p className={activityStyles.date}>Date: {date}</p>
       </section>
       <section>
-        <Link to={`${slug}`}>Read More</Link>
+        <Link style={{ color: "#30336B" }} to={`${slug}`}>
+          Read More
+        </Link>
       </section>
     </section>
   )
