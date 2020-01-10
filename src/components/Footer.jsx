@@ -44,7 +44,7 @@ const Footer = () => {
         />
       </section>
       <p className={footerStyles.text}>
-        WebDev Team KC Ecell © 2019 | KC Ecell.
+        WebDev Team KC Ecell © 2020 | KC Ecell.
       </p>
     </footer>
   )
