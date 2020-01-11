@@ -1,17 +1,14 @@
 import React, { useState } from "react"
 import styles from "../styles/contact.module.css"
 
-const Popup = () => {
-  return (
-    <section className={styles.popup}>
-      <p>Enter full details!</p>
-    </section>
-  )
-}
+const Button = ({ text }) => (
+  <button className={styles.sentButton} type="submit">
+    {text}
+  </button>
+)
 
 const Contact = () => {
   let [isSent, setIsSent] = useState(false)
-  let [showPopup, setShowPopup] = useState(false)
   let [name, setName] = useState("")
   let [email, setEmail] = useState("")
   let [subject, setSubject] = useState("")
@@ -19,11 +16,35 @@ const Contact = () => {
 
   return (
     <section style={{ marginBottom: 10 }}>
-      {showPopup ? <Popup /> : null}
       <h1 className={styles.header}>Contact Us</h1>
       <section className={styles.main}>
         <section className={styles.formContainer}>
-          <form className={styles.form}>
+          <form
+            className={styles.form}
+            onSubmit={async event => {
+              event.preventDefault()
+              //send to backend API
+              // const data = {
+              //   name,
+              //   email,
+              //   subject,
+              //   message,
+              // }
+              // const url = "http://localhost:4000/mail"
+              // await fetch(url, {
+              //   method: "POST",
+              //   mode: "no-cors",
+              //   body: JSON.stringify(data),
+              // })
+              //sent
+              setIsSent(true)
+              setName("")
+              setEmail("")
+              setSubject("")
+              setMessage("")
+              window.scrollTo(0, 0)
+            }}
+          >
             <label htmlFor="uname">Name: </label>
             <input
               className={styles.inputs}
@@ -31,6 +52,7 @@ const Contact = () => {
               type="text"
               value={name}
               onChange={event => setName(event.target.value)}
+              required
             />
             <label htmlFor="uemail">Email: </label>
             <input
@@ -39,6 +61,7 @@ const Contact = () => {
               type="email"
               value={email}
               onChange={event => setEmail(event.target.value)}
+              required
             />
             <label htmlFor="usubject">Subject: </label>
             <input
@@ -47,6 +70,7 @@ const Contact = () => {
               type="text"
               value={subject}
               onChange={event => setSubject(event.target.value)}
+              required
             />
             <label htmlFor="umessage">Message: </label>
             <textarea
@@ -56,39 +80,10 @@ const Contact = () => {
               style={{ height: 120 }}
               value={message}
               onChange={event => setMessage(event.target.value)}
+              required
             ></textarea>
+            {isSent ? <Button text={"Sent"} /> : <Button text={"Send"} />}
           </form>
-          {isSent ? (
-            <button className={styles.sentButton} type="button">
-              Sent
-            </button>
-          ) : (
-            <button
-              className={styles.sendButton}
-              type="button"
-              onClick={() => {
-                //check inputs and send
-                if (
-                  name === "" ||
-                  email === "" ||
-                  subject === "" ||
-                  message === ""
-                ) {
-                  setShowPopup(true)
-                  setTimeout(() => setShowPopup(false), 2000)
-                } else {
-                  //send to backend API
-                  setIsSent(true)
-                  setName("")
-                  setEmail("")
-                  setSubject("")
-                  setMessage("")
-                }
-              }}
-            >
-              Send
-            </button>
-          )}
         </section>
         <section className={styles.secondContainer}>
           {isSent ? (
