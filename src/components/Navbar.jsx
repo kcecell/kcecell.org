@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 
 const menus = [
   { id: 1, menuName: "Events", url: "/events" },
-  { id: 2, menuName: "About Us", url: "/about" },
+  { id: 2, menuName: "Members", url: "/members" },
   { id: 3, menuName: "Contact Us", url: "/contact" },
 ]
 
