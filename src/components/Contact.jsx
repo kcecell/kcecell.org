@@ -1,8 +1,8 @@
 import React, { useState } from "react"
 import styles from "../styles/contact.module.css"
 
-const Button = ({ text }) => (
-  <button className={styles.sentButton} type="submit">
+const Button = ({ text, btnStyle }) => (
+  <button className={btnStyle} type="submit">
     {text}
   </button>
 )
@@ -82,7 +82,11 @@ const Contact = () => {
               onChange={event => setMessage(event.target.value)}
               required
             ></textarea>
-            {isSent ? <Button text={"Sent"} /> : <Button text={"Send"} />}
+            {isSent ? (
+              <Button btnStyle={styles.sentButton} text={"Sent"} />
+            ) : (
+              <Button btnStyle={styles.sendButton} text={"Send"} />
+            )}
           </form>
         </section>
         <section className={styles.secondContainer}>
