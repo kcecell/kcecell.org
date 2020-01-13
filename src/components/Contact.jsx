@@ -1,11 +1,16 @@
 import React, { useState } from "react"
 import styles from "../styles/contact.module.css"
 
-const Button = ({ text, btnStyle }) => (
-  <button className={btnStyle} type="submit">
-    {text}
-  </button>
-)
+const Button = ({ text, btnStyle, disabled }) =>
+  disabled ? (
+    <button className={btnStyle} type="submit" disabled>
+      {text}
+    </button>
+  ) : (
+    <button className={btnStyle} type="submit">
+      {text}
+    </button>
+  )
 
 const Contact = () => {
   let [isSent, setIsSent] = useState(false)
@@ -83,7 +88,11 @@ const Contact = () => {
               required
             ></textarea>
             {isSent ? (
-              <Button btnStyle={styles.sentButton} text={"Sent"} />
+              <Button
+                btnStyle={styles.sentButton}
+                text={"Sent"}
+                disabled={true}
+              />
             ) : (
               <Button btnStyle={styles.sendButton} text={"Send"} />
             )}
