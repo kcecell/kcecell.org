@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
-import firstImage from "../images/img1.jpg"
-import secondImage from "../images/img2.jpg"
-import thirdImage from "../images/img3.jpg"
+import firstImage from "../images/img1.png"
+import secondImage from "../images/img2.png"
+import thirdImage from "../images/img3.png"
 import carouselStyles from "../styles/carousel.module.css"
 
 function CarouselImage(props) {
