@@ -13,11 +13,39 @@ const Button = ({ text, btnStyle, disabled }) =>
   )
 
 const Contact = () => {
+  const [state, setState] = useState({})
   let [isSent, setIsSent] = useState(false)
-  let [name, setName] = useState("")
-  let [email, setEmail] = useState("")
-  let [subject, setSubject] = useState("")
-  let [message, setMessage] = useState("")
+
+  function encode(data) {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&")
+  }
+
+  const handleChange = e => {
+    setState({ ...state, [e.target.name]: e.target.value })
+  }
+
+  const handleSubmit = e => {
+    e.preventDefault()
+    const form = e.target
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": form.getAttribute("name"),
+        ...state,
+      }),
+    })
+      .then(() => {
+        document.getElementsByName("ecell-website-form")[0].reset()
+        setIsSent(true)
+        window.scrollTo(0, 0)
+      })
+      .catch(error => {
+        alert("Try contacting us through our social media.")
+      })
+  }
 
   return (
     <section style={{ marginBottom: 10 }}>
@@ -26,37 +54,19 @@ const Contact = () => {
         <section className={styles.formContainer}>
           <form
             className={styles.form}
-            onSubmit={async event => {
-              event.preventDefault()
-              //send to backend API
-              // const data = {
-              //   name,
-              //   email,
-              //   subject,
-              //   message,
-              // }
-              // const url = "http://localhost:4000/mail"
-              // await fetch(url, {
-              //   method: "POST",
-              //   mode: "no-cors",
-              //   body: JSON.stringify(data),
-              // })
-              //sent
-              setIsSent(true)
-              setName("")
-              setEmail("")
-              setSubject("")
-              setMessage("")
-              window.scrollTo(0, 0)
-            }}
+            name="ecell-website-form"
+            method="post"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            onSubmit={handleSubmit}
           >
             <label htmlFor="uname">Name: </label>
             <input
               className={styles.inputs}
               id="uname"
               type="text"
-              value={name}
-              onChange={event => setName(event.target.value)}
+              name="User name"
+              onChange={handleChange}
               required
             />
             <label htmlFor="uemail">Email: </label>
@@ -64,8 +74,8 @@ const Contact = () => {
               className={styles.inputs}
               id="uemail"
               type="email"
-              value={email}
-              onChange={event => setEmail(event.target.value)}
+              name="User email"
+              onChange={handleChange}
               required
             />
             <label htmlFor="usubject">Subject: </label>
@@ -73,8 +83,8 @@ const Contact = () => {
               className={styles.inputs}
               id="usubject"
               type="text"
-              value={subject}
-              onChange={event => setSubject(event.target.value)}
+              name="Subject"
+              onChange={handleChange}
               required
             />
             <label htmlFor="umessage">Message: </label>
@@ -83,8 +93,8 @@ const Contact = () => {
               id="umessage"
               placeholder="Write message .."
               style={{ height: 120 }}
-              value={message}
-              onChange={event => setMessage(event.target.value)}
+              name="message"
+              onChange={handleChange}
               required
             ></textarea>
             {isSent ? (
