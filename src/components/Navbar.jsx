@@ -1,5 +1,5 @@
 import React from "react"
-import logo from "../images/ecell-logo.png"
+import logo from "../images/ecell-logo.webp"
 import "../styles/navbar.css"
 import { Link } from "gatsby"
 
