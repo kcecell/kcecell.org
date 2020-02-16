@@ -9,7 +9,6 @@ const Layout = ({ children }) => {
       <br />
       <br />
       <br />
-      <br />
       {children}
       <Footer />
     </React.Fragment>

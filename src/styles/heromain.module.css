@@ -1,11 +1,11 @@
 .main {
-  margin-top: -14px;
   height: calc(100vh - 58px);
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 .mainText {
+  margin-top: -10px;
   font-weight: 400;
   color: #ffffff;
   font-size: 4rem;
@@ -17,7 +17,13 @@
 @media (max-width: 475px) {
   .mainText {
     font-size: 2rem;
-    font-style: italic;
     line-height: 2.8rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .mainText {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
   }
 }

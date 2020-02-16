@@ -115,9 +115,10 @@ function Heromain() {
           style={{
             backgroundColor: "#06061b",
             position: "absolute",
-            top: 0,
+            top: 58,
             left: 0,
             zIndex: -100,
+            maxHeight: "calc(100vh - 58px)",
           }}
         />
         <h1 className={styles.mainText}>
