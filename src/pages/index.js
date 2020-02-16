@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout"
-import Carousel from "../components/Carousel"
+import Heromain from "../components/Heromain"
 import Activities from "../components/Activities"
 import About from "../components/About"
 import WhatWeDo from "../components/WhatWeDo"
@@ -10,7 +10,7 @@ export default () => {
   return (
     <Layout>
       <SEO title={"Home - KC Enterpreneurship Cell"} />
-      <Carousel />
+      <Heromain />
       <About />
       <WhatWeDo />
       <Activities />
