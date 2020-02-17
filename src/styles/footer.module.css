@@ -13,3 +13,11 @@
 .logo {
   margin: 0px 15px;
 }
+.anchor {
+  color: #ffffff;
+  text-decoration: unset;
+  border-bottom: 1px solid;
+}
+.text {
+  line-height: 2.2rem;
+}

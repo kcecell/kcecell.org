@@ -45,6 +45,16 @@ const Footer = () => {
       </section>
       <p className={footerStyles.text}>
         WebDev Team KC Ecell © 2020 | KC Ecell.
+        <br />
+        Made with ❤️ by{" "}
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          className={footerStyles.anchor}
+          href="https://linkedin.com/in/siddiquiehtesham"
+        >
+          Ehtesham Siddiqui{" "}
+        </a>
       </p>
     </footer>
   )
