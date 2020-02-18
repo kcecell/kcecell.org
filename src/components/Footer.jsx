@@ -4,6 +4,7 @@ import linkedinLogo from "../images/linkedin-logo.svg"
 import instagramLogo from "../images/instagram-logo.svg"
 import facebookLogo from "../images/facebook-logo.svg"
 import emailLogo from "../images/email-logo.svg"
+import githubLogo from "../images/githubLogoFooter.svg"
 import { Link } from "gatsby"
 
 const Logo = ({ link, img, alt }) => {
@@ -28,6 +29,11 @@ const Footer = () => {
         <Logo
           link={"https://www.facebook.com/kcecell/"}
           img={facebookLogo}
+          alt={"f"}
+        />
+        <Logo
+          link={"https://www.github.com/kcecell/"}
+          img={githubLogo}
           alt={"f"}
         />
         <Link style={{ margin: "0px 15px" }} to="/contact">
