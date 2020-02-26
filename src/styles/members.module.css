@@ -1,12 +1,14 @@
 .cardContainer {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
 }
 .card {
   width: 18rem;
+  margin-left: 10px;
+  margin-right: 10px;
   text-align: center;
   padding-top: 30px;
   padding-bottom: 20px;
