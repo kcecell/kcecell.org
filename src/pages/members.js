@@ -36,17 +36,22 @@ function Card({ name, profilePic, linkedin, github, position }) {
 export default () => {
   const data = useStaticQuery(graphql`
     query {
-      allMembersJson {
+      allMarkdownRemark(
+        filter: { frontmatter: { category: { eq: "member" } } }
+      ) {
         edges {
           node {
-            name
-            position
-            linkedin
-            github
-            profilePic {
-              childImageSharp {
-                fixed(width: 130, height: 130) {
-                  ...GatsbyImageSharpFixed
+            id
+            frontmatter {
+              name
+              position
+              linkedIn
+              gitHub
+              thumbnail {
+                childImageSharp {
+                  fixed(width: 130, height: 130) {
+                    ...GatsbyImageSharpFixed
+                  }
                 }
               }
             }
@@ -65,14 +70,14 @@ export default () => {
       />
       <Header headerText={"Ecell Team"} />
       <section className={styles.cardContainer}>
-        {data.allMembersJson.edges.map(({ node }) => (
+        {data.allMarkdownRemark.edges.map(({ node }) => (
           <Card
-            key={node.name}
-            name={node.name}
-            position={node.position}
-            profilePic={node.profilePic.childImageSharp.fixed}
-            github={node.github}
-            linkedin={node.linkedin}
+            key={node.id}
+            name={node.frontmatter.name}
+            position={node.frontmatter.position}
+            profilePic={node.frontmatter.thumbnail.childImageSharp.fixed}
+            github={node.frontmatter.gitHub}
+            linkedin={node.frontmatter.linkedIn}
           />
         ))}
       </section>

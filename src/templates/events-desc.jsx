@@ -7,41 +7,45 @@ import Img from "gatsby-image"
 
 export const query = graphql`
   query($slug: String!) {
-    eventsJson(slug: { eq: $slug }) {
-      title
-      description
-      date
-      slug
-      image {
-        childImageSharp {
-          fixed {
-            ...GatsbyImageSharpFixed
+    markdownRemark(
+      frontmatter: { category: { eq: "events" }, slug: { eq: $slug } }
+    ) {
+      id
+      frontmatter {
+        title
+        date(formatString: "MMMM Do, YYYY")
+        thumbnail {
+          childImageSharp {
+            fixed {
+              ...GatsbyImageSharpFixed
+            }
           }
         }
       }
+      html
     }
   }
 `
 
 const EventsDesc = ({ data }) => {
-  const event = data.eventsJson
+  const event = data.markdownRemark
 
   return (
     <Layout>
-      <SEO title={event.title} />
+      <SEO title={event.frontmatter.title} />
       <main>
         <h1 className={styles.header}>{event.title}</h1>
         <Img
           className={styles.eventImage}
-          fixed={event.image.childImageSharp.fixed}
+          fixed={event.frontmatter.thumbnail.childImageSharp.fixed}
         />
         <section className={styles.dateContainer}>
           <h4 style={{ display: "inline" }}>Date: </h4>
-          <span>{event.date}</span>
+          <span>{event.frontmatter.date}</span>
         </section>
         <section
           className={styles.content}
-          dangerouslySetInnerHTML={{ __html: event.description }}
+          dangerouslySetInnerHTML={{ __html: event.html }}
         />
       </main>
     </Layout>

@@ -5,20 +5,34 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `./data/`,
+        name: `assets`,
+        path: `./static/assets`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `./data/members.json`,
+        path: `./data`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          `gatsby-remark-relative-images`,
+          {
+            resolve: `gatsby-remark-images`,
+            options: { maxWidth: 500 },
+          },
+        ],
       },
     },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    `gatsby-transformer-json`,
+    "gatsby-plugin-netlify-cms",
   ],
 }

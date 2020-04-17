@@ -24,18 +24,22 @@ const Card = ({ image, title, date, slug }) => {
 }
 
 export default () => {
-  const data = useStaticQuery(
-    graphql`
-      query {
-        allEventsJson(sort: { fields: eventNum, order: DESC }) {
-          edges {
-            node {
+  const data = useStaticQuery(graphql`
+    query {
+      allMarkdownRemark(
+        filter: { frontmatter: { category: { eq: "events" } } }
+        sort: { fields: frontmatter___eventNum, order: DESC }
+      ) {
+        edges {
+          node {
+            id
+            frontmatter {
               title
-              date
+              date(formatString: "MMMM Do, YYYY")
               slug
-              image {
+              thumbnail {
                 childImageSharp {
-                  fixed(width: 288, height: 266) {
+                  fixed(height: 266, width: 288) {
                     ...GatsbyImageSharpFixed
                   }
                 }
@@ -44,21 +48,21 @@ export default () => {
           }
         }
       }
-    `
-  )
+    }
+  `)
 
   return (
     <Layout>
       <SEO title={"Events - KC Entrepreneurship Cell"} />
       <Header headerText={"Events"} />
       <section className={activityStyles.cardContainer}>
-        {data.allEventsJson.edges.map(({ node }) => (
+        {data.allMarkdownRemark.edges.map(({ node }) => (
           <Card
-            key={node.slug}
-            title={node.title}
-            date={node.date}
-            slug={node.slug}
-            image={node.image.childImageSharp.fixed}
+            key={node.id}
+            title={node.frontmatter.title}
+            date={node.frontmatter.date}
+            slug={node.frontmatter.slug}
+            image={node.frontmatter.thumbnail.childImageSharp.fixed}
           />
         ))}
       </section>
