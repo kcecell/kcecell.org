@@ -1,9 +1,12 @@
 .cardContainer {
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
 }
 .card {
   width: 18rem;
@@ -37,4 +40,12 @@
   height: 30px;
   width: 30px;
   margin: 0 15px;
+}
+
+@media (max-width: 475px) {
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
