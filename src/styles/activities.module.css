@@ -2,11 +2,9 @@
   margin-top: 60px;
 }
 .cardContainer {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
 }
 .card {
   line-height: 1.5;
@@ -31,9 +29,19 @@
   font-style: italic;
 }
 
-/* phone */
-@media (max-width: 475px) {
+@media (max-width: 870px) {
   .cardContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
+
+/* phone */
+@media (max-width: 573px) {
+  .cardContainer {
+    display: flex;
+    align-items: center;
     flex-direction: column;
   }
   .card {

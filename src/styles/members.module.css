@@ -1,9 +1,7 @@
 .cardContainer {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
 }
 .card {
   width: 18rem;
@@ -37,4 +35,24 @@
   height: 30px;
   width: 30px;
   margin: 0 15px;
+}
+
+@media (max-width: 900px) {
+  .cardContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
+
+/* phone */
+@media (max-width: 600px) {
+  .cardContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .card {
+    margin-top: 30px;
+  }
 }
