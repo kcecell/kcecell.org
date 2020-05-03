@@ -17,6 +17,18 @@ collections:
       - { label: "LinkedIn", name: "linkedIn", widget: "string" }
       - { label: "Category", name: "category", widget: "string" }
 
+  - name: mentors
+    label: Mentors
+    folder: data/mentors
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Position", name: "position", widget: "string" }
+      - { label: "Thumbnail", name: "thumbnail", widget: "image" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Category", name: "category", widget: "string" }
+
   - name: events
     label: Events
     folder: data/events
