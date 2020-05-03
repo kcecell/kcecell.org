@@ -7,6 +7,7 @@ import linkedinLogo from "../images/linkedinLogo.svg"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import styles from "../styles/members.module.css"
+import Mentors from "../components/Mentors"
 
 function Card({ name, profilePic, linkedin, github, position }) {
   let githubComp = null
@@ -68,6 +69,8 @@ export default () => {
         name={"description"}
         content={"Team of KC E-cell Thane."}
       />
+
+      <Mentors />
       <Header headerText={"Ecell Team"} />
       <section className={styles.cardContainer}>
         {data.allMarkdownRemark.edges.map(({ node }) => (
