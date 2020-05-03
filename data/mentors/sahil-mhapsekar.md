@@ -2,7 +2,7 @@
 title: Sahil-Mhapsekar
 name: Sahil Mhapsekar
 position: Cofounder of Geekabyte.tech
-thumbnail: /assets/head10.jpeg
+thumbnail: /assets/sahil.jpg
 description: >-
   Sahil, as the name says true guide and leader, who’d never settle for
   something simple or average. Instead would go beyond the stereotypes and craft
