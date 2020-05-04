@@ -1,7 +1,9 @@
 .main {
-  padding: 7px 15px 10px 15px;
   color: #000000;
   background-color: #ffffff;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0px 15px 10px 15px;
 }
 .content {
   text-align: justify;
