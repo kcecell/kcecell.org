@@ -4,7 +4,7 @@ import githubLogo from "../images/githubLogo.svg"
 import linkedinLogo from "../images/linkedinLogo.svg"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import styles from "../styles/members.module.css"
+import styles from "../styles/team.module.css"
 
 function Card({ name, profilePic, linkedin, github, position }) {
   let githubComp = null
