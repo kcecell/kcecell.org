@@ -13,4 +13,5 @@ description: >-
 
   As our Mentor, he has always encouraged students by lifting their spirits and helping them in shaping their ideas effectively. In very shot span of time, he made a tremendous growth in E-cell which defines his interpretive and problem-solving skills. He loves things to be perfect and scheduled properly and inculcates the same in the members.
 category: mentor
+order: 3
 ---
