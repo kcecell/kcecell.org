@@ -24,6 +24,7 @@ const Mentors = () => {
     query {
       allMarkdownRemark(
         filter: { frontmatter: { category: { eq: "mentor" } } }
+        sort: { fields: frontmatter___order, order: ASC }
       ) {
         edges {
           node {
@@ -32,6 +33,7 @@ const Mentors = () => {
               name
               position
               description
+              order
               thumbnail {
                 childImageSharp {
                   fixed(height: 250, width: 250) {
