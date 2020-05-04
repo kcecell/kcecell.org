@@ -9,9 +9,9 @@ description: >-
   his own dreams with vision, dedication, and hard work.
 
 
-  A profound Web-Developer at AKQA and an International level organizer of REACT conferences under the banner of “REACT INDIA”. Under his present website Geekabyte, he takes workshops and talks on topics revolving around REACT, REACT JS and Graph QL with his team of expert Web Developers.
+  A profound Web-Developer at AKQA and an International level organizer of React conferences under the banner of “REACT INDIA”. Under his present company Geekabyte, he takes workshops and talks on topics revolving around ReactJS and GraphQL with his team of expert web developers.
 
 
-  As our E-cell Mentor, Sahil not only is our guide but a true visionary and motivation behind every successful projects and startups. He is a perfect example of how a leader should be! 
+  As our Ecell Mentor, Sahil not only is our guide but a true visionary and motivation behind every successful projects and startups. He is a perfect example of how a leader should be! 
 category: mentor
 ---
