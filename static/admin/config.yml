@@ -28,6 +28,7 @@ collections:
       - { label: "Thumbnail", name: "thumbnail", widget: "image" }
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Category", name: "category", widget: "string" }
+      - { label: "Order No.", name: "order", widget: "number" }
 
   - name: events
     label: Events
