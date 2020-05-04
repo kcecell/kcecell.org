@@ -28,7 +28,7 @@ const Activities = () => {
         allMarkdownRemark(
           filter: { frontmatter: { category: { eq: "events" } } }
           sort: { fields: frontmatter___eventNum, order: DESC }
-          limit: 4
+          limit: 3
         ) {
           edges {
             node {
@@ -55,16 +55,18 @@ const Activities = () => {
   return (
     <section className={activityStyles.campusActivities}>
       <Header headerText={"Campus Activities"} />
-      <section className={activityStyles.cardContainer}>
-        {data.allMarkdownRemark.edges.map(({ node }) => (
-          <Card
-            key={node.id}
-            title={node.frontmatter.title}
-            date={node.frontmatter.date}
-            slug={node.frontmatter.slug}
-            image={node.frontmatter.thumbnail.childImageSharp.fixed}
-          />
-        ))}
+      <section style={{ maxWidth: "1160px", margin: "0 auto" }}>
+        <section className={[activityStyles.cardContainer]}>
+          {data.allMarkdownRemark.edges.map(({ node }) => (
+            <Card
+              key={node.id}
+              title={node.frontmatter.title}
+              date={node.frontmatter.date}
+              slug={node.frontmatter.slug}
+              image={node.frontmatter.thumbnail.childImageSharp.fixed}
+            />
+          ))}
+        </section>
       </section>
     </section>
   )

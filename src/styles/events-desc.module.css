@@ -13,6 +13,8 @@
   padding-bottom: 0;
 }
 .content {
+  margin: 0 auto;
+  width: 80%;
   font-size: 1.1rem;
   line-height: 1.5;
   text-align: justify;

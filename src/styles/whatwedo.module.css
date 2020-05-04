@@ -5,6 +5,8 @@
   color: #e2e1e1;
 }
 .cardContainer {
+  max-width: 1400px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -32,8 +34,29 @@
   text-align: justify;
 }
 
+/* phone */
 @media (max-width: 475px) {
   .main {
     margin-top: 30px;
   }
+}
+
+/* iPad */
+@media (min-width: 768px) {
+  .cardContainer{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+  }
+}
+
+/* big screen */
+@media (min-width: 1300px) {
+  .cardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 }

@@ -64,25 +64,26 @@ export default () => {
 
   return (
     <Layout>
-      <SEO
-        title={"Team - KC Entrepreneurship Cell"}
-        name={"description"}
-        content={"Team of KC E-cell Thane."}
-      />
-
-      <Mentors />
-      <Header headerText={"Ecell Team"} />
-      <section className={styles.cardContainer}>
-        {data.allMarkdownRemark.edges.map(({ node }) => (
-          <Card
-            key={node.id}
-            name={node.frontmatter.name}
-            position={node.frontmatter.position}
-            profilePic={node.frontmatter.thumbnail.childImageSharp.fixed}
-            github={node.frontmatter.gitHub}
-            linkedin={node.frontmatter.linkedIn}
-          />
-        ))}
+        <SEO
+          title={"Team - KC Entrepreneurship Cell"}
+          name={"description"}
+          content={"Team of KC E-cell Thane."}
+        />
+      <section style={{ maxWidth: "1160px", margin: "0 auto" }}>
+        <Mentors />
+        <Header headerText={"Ecell Team"} />
+        <section className={styles.cardContainer}>
+          {data.allMarkdownRemark.edges.map(({ node }) => (
+            <Card
+              key={node.id}
+              name={node.frontmatter.name}
+              position={node.frontmatter.position}
+              profilePic={node.frontmatter.thumbnail.childImageSharp.fixed}
+              github={node.frontmatter.gitHub}
+              linkedin={node.frontmatter.linkedIn}
+            />
+          ))}
+        </section>
       </section>
     </Layout>
   )

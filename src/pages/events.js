@@ -54,17 +54,19 @@ export default () => {
   return (
     <Layout>
       <SEO title={"Events - KC Entrepreneurship Cell"} />
-      <Header headerText={"Events"} />
-      <section className={activityStyles.cardContainer}>
-        {data.allMarkdownRemark.edges.map(({ node }) => (
-          <Card
-            key={node.id}
-            title={node.frontmatter.title}
-            date={node.frontmatter.date}
-            slug={node.frontmatter.slug}
-            image={node.frontmatter.thumbnail.childImageSharp.fixed}
-          />
-        ))}
+      <section style={{ maxWidth: "1160px", margin: "0 auto" }}>
+        <Header headerText={"Events"} />
+        <section className={activityStyles.cardContainer}>
+          {data.allMarkdownRemark.edges.map(({ node }) => (
+            <Card
+              key={node.id}
+              title={node.frontmatter.title}
+              date={node.frontmatter.date}
+              slug={node.frontmatter.slug}
+              image={node.frontmatter.thumbnail.childImageSharp.fixed}
+            />
+          ))}
+        </section>
       </section>
     </Layout>
   )

@@ -1,19 +1,19 @@
 import React from "react"
 import Header from "./Header"
 import Img from "gatsby-image"
-import { Link, useStaticQuery, graphql } from "gatsby"
-import mentorStyles from "../styles/mentors.module.css"
+import { useStaticQuery, graphql } from "gatsby"
+import styles from "../styles/mentors.module.css"
 
 const Card = ({ image, title, description, position }) => {
   return (
-    <section className={mentorStyles.card}>
-      <section className={mentorStyles.imageContainer}>
-        <Img className={mentorStyles.cardImage} fixed={image} />
-        <h1 className={mentorStyles.cardHeader}>{title}</h1>
+    <section className={styles.card}>
+      <section className={styles.imageContainer}>
+        <Img className={styles.cardImage} fixed={image} />
+        <h1 className={styles.cardHeader}>{title}</h1>
       </section>
-      <section className={mentorStyles.infoContainer}>
-        <h4 className={mentorStyles.cardPosition}> {position} </h4>
-        <p className={mentorStyles.description}> {description} </p>
+      <section className={styles.infoContainer}>
+        <h4 className={styles.subHeader}> - {position} </h4>
+        <p className={styles.description}> {description} </p>
       </section>
     </section>
   )
@@ -49,7 +49,7 @@ const Mentors = () => {
   return (
     <section>
       <Header headerText={`Ecell Mentors`} />
-      <section className={mentorStyles.mainContainer}>
+      <section className={styles.container}>
         {data.allMarkdownRemark.edges.map(({ node }) => {
           return (
             <Card
