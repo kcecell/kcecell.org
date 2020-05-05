@@ -1,0 +1,19 @@
+---
+title: Seminar on Mobile Computing and 4G/5G Network Technology
+date: 2018-01-26T06:30:00.000Z
+slug: events/mobile-computing-seminar
+thumbnail: /assets/mobile-computing-seminar.jpg
+category: events
+eventNum: 8
+---
+The ever-enthusiastic crowd of KCCOE witnessed a revolutionary seminar, which gave an insight into Mobile Computing and 4G/5G Network, which was organised by IQAC and KC E-cell. The featured speaker of this fantastic seminar was Dr Alhad Kuwadekar, PhD- Mobile Computing, University of Glamorgan, UK (2010). This seminar began at around 12 noon, where at first, Dr Hansraj Guhilot, Principal, KCCOE, warmly welcomed the speaker by felicitating him and introduced the speaker to the audience present.
+
+The audience of this mind-boggling seminar were Dr Hansraj Guhilot, Dr Sai Kiran Khanna, Dr Puja Rai, teachers, students and KC E-Cell members. The actual seminar started with the speaker introducing the audience to Mobile Computing, in which he highlighted the scarcity of memory. Further, Dr Alhad briefed up the audience about Mobile Communication and cited some basic applications of Mobile Computing, for instance, Self-driving vehicles, a sensor-based network for emergency cases, Follow-on services, Information services and many more. Then, before diving deeper into Mobile Computing and Communication, the speaker gave an overview about the History of Mobile phones, starting from 1982, where Mobika Senator was introduced to 2005, where 3G was introduced.
+
+Further, he spoke about the features of the mobile phones, where the speaker highlighted that 90% of features remain unused still, the consumerism simply keeps on skyrocketing, thus giving the mobile companies, an upper hand over the consumers. Dr Alhad also mentioned the effects of Device Portability and gave a brief comparison between Wireless networks and Fixed networks. Thus, after introducing the audience to the concepts of Mobile Computing, a short break was taken for refreshment. But, there was already a lot of excitement amongst the audience for the next part of this seminar.
+
+The seminar resumed at 2:45 pm, with the audience, refreshed and ready to look forward into what Dr Alhad was about to introduce them to. Seminar restarted with the concepts of Signal Propagation, Multiplexing & its different types, Cell structures and importance of frequency planning. Further, the speaker gave an overview of Cell Breathing and briefed up on CDMA Technology with a demonstrative example. Diving deeper into the concepts of networking, Dr Alhad mentioned the Drawbacks of PSTN and the rise of IP, factors affecting the mobile broadband and several concepts of 3G, 4G, SIP error responses, Proxy server, Back to Back User Agent (B2BUA) and Basic SIP Session setup.
+
+After all of the conceptual talk, Dr Alhad introduced the showstopper of the seminar, Introduction to the Internet of Things (IoT). Live demonstrations of Smart Home solutions left the audiences in awe! Also, he gave some example of Smart Automation, Smart Health, etc. All these examples demonstrated were too relatable, with the concept of real world Problem Solving, which in turn, is the gist of Engineering as well as Entrepreneurship. Towards the end, Dr Alhad got his hands dirty on some real Android Programming demonstrations, which held the audiences, till the very end. This complete session was streamed live in three parts on Facebook and Instagram of KC E-Cell.
+
+In this way, this meritorious and brainstorming seminar concluded at 5:20 pm, with audiences coming out with a lot of new information and knowledge, which was enough to give a kick-start to the generation of new ideas and innovation, which was some real motivation to ignite the passion of Problem Solving.
