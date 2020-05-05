@@ -10,47 +10,27 @@ function Heromain() {
           params={{
             particles: {
               number: {
-                value: 80,
-                density: {
-                  enable: true,
-                  value_area: 800,
-                },
+                value: 160,
+                density: { enable: true, value_area: 800 },
               },
-              color: {
-                value: "#ffffff",
-              },
+              color: { value: "#ffffff" },
               shape: {
                 type: "circle",
-                stroke: {
-                  width: 0,
-                  color: "#000000",
-                },
-                polygon: {
-                  nb_sides: 5,
-                },
+                stroke: { width: 0, color: "#000000" },
+                polygon: { nb_sides: 5 },
               },
               opacity: {
-                value: 0.5,
-                random: false,
-                anim: {
-                  enable: false,
-                  speed: 1,
-                  opacity_min: 0.1,
-                  sync: false,
-                },
+                value: 1,
+                random: true,
+                anim: { enable: true, speed: 1, opacity_min: 0, sync: false },
               },
               size: {
                 value: 3,
                 random: true,
-                anim: {
-                  enable: false,
-                  speed: 40,
-                  size_min: 0.1,
-                  sync: false,
-                },
+                anim: { enable: false, speed: 4, size_min: 0.3, sync: false },
               },
               line_linked: {
-                enable: true,
+                enable: false,
                 distance: 150,
                 color: "#ffffff",
                 opacity: 0.4,
@@ -58,56 +38,34 @@ function Heromain() {
               },
               move: {
                 enable: true,
-                speed: 6,
+                speed: 1,
                 direction: "none",
-                random: false,
+                random: true,
                 straight: false,
                 out_mode: "out",
                 bounce: false,
-                attract: {
-                  enable: false,
-                  rotateX: 600,
-                  rotateY: 1200,
-                },
+                attract: { enable: false, rotateX: 600, rotateY: 600 },
               },
             },
             interactivity: {
               detect_on: "canvas",
               events: {
-                onhover: {
-                  enable: false,
-                  mode: "repulse",
-                },
-                onclick: {
-                  enable: false,
-                  mode: "push",
-                },
+                onhover: { enable: true, mode: "bubble" },
+                onclick: { enable: true, mode: "repulse" },
                 resize: true,
               },
               modes: {
-                grab: {
-                  distance: 400,
-                  line_linked: {
-                    opacity: 1,
-                  },
-                },
+                grab: { distance: 400, line_linked: { opacity: 1 } },
                 bubble: {
-                  distance: 400,
-                  size: 40,
+                  distance: 250,
+                  size: 0,
                   duration: 2,
-                  opacity: 8,
+                  opacity: 0,
                   speed: 3,
                 },
-                repulse: {
-                  distance: 200,
-                  duration: 0.4,
-                },
-                push: {
-                  particles_nb: 4,
-                },
-                remove: {
-                  particles_nb: 2,
-                },
+                repulse: { distance: 400, duration: 0.4 },
+                push: { particles_nb: 4 },
+                remove: { particles_nb: 2 },
               },
             },
             retina_detect: true,
@@ -115,7 +73,7 @@ function Heromain() {
           style={{
             backgroundColor: "#06061b",
             position: "absolute",
-            top: 58,
+            top: 60,
             left: 0,
             zIndex: -100,
             maxHeight: "calc(100vh - 58px)",

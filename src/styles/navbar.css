@@ -2,7 +2,6 @@
   cursor: pointer;
   display: block;
   padding: 20px 20px;
-  border-right: 1px solid #f4f4f4;
   text-decoration: none;
 }
 
@@ -21,6 +20,7 @@
   list-style: none;
   overflow: hidden;
   background-color: #fff;
+  margin-right: 8px;
 }
 
 .header li:hover,
@@ -39,7 +39,6 @@
 }
 
 /* menu */
-
 .header .menu {
   clear: both;
   max-height: 0;
@@ -47,7 +46,6 @@
 }
 
 /* menu icon */
-
 .header .menu-icon {
   float: right;
   cursor: pointer;
@@ -55,7 +53,6 @@
   padding: 28px 20px;
   position: relative;
   user-select: none;
-  /* margin-top: 10px; */
 }
 
 .header .menu-icon .navicon {
@@ -87,7 +84,6 @@
 }
 
 /* menu btn */
-
 .header .menu-btn {
   display: none;
 }
@@ -115,11 +111,14 @@
 
 /* 48em = 768px */
 @media (min-width: 48em) {
+  .header ul {
+    margin-right: 40px;
+  }
   .header li {
     float: left;
   }
   .header li {
-    padding: 20px 30px;
+    padding: 20px 25px;
   }
   .header .menu {
     clear: none;
@@ -131,5 +130,6 @@
   }
   .header .logo {
     margin-top: -2px;
+    margin-left: 40px;
   }
 }

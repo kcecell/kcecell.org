@@ -14,11 +14,11 @@
 }
 .content {
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
   font-size: 1.1rem;
   line-height: 1.5;
   text-align: justify;
-  padding: 1.4rem;
+  padding: 1rem;
 }
 
 @media (max-width: 475px) {

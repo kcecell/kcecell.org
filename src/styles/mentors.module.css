@@ -70,11 +70,15 @@
 }
 
 @media (max-width: 475px) {
-  .container{
+  .container {
     margin-bottom: 0;
   }
   .infoContainer {
     margin: 0;
+  }
+  .description {
+    padding: 0px;
+    padding-top: 10px;
   }
   .card {
     box-shadow: none;
