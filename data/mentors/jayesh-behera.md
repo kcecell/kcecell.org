@@ -14,5 +14,5 @@ description: >-
 
   With 100s of treks and thousands of beautiful memories, he has made his foot strong in community at a very young age and gained trust of every investor and trek enthusiast. As our Mentor, he has brought Google crowdsource to our college and has also guided our Ecell for National entrepreneurship challenge, which ranked 2nd all over.
 category: mentor
-order: 2
+order: 3
 ---
