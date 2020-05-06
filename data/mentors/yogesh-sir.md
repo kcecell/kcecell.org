@@ -1,7 +1,7 @@
 ---
 title: Yogesh-sir
 name: Yogesh Karunakar
-position: Professor at K.C College of Engineering and Management Studies and Research
+position: Professor at KCCEMSR
 thumbnail: /assets/yogesh-sir.png
 description: >-
   Professor at K.C.College of Engineering and Management Studies & Research
