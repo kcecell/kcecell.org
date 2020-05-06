@@ -36,8 +36,8 @@ const Mentors = () => {
               order
               thumbnail {
                 childImageSharp {
-                  fixed(height: 250, width: 250) {
-                    ...GatsbyImageSharpFixed
+                  fixed(height: 250, width: 250, quality: 100) {
+                    ...GatsbyImageSharpFixed_withWebp
                   }
                 }
               }

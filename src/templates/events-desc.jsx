@@ -16,8 +16,8 @@ export const query = graphql`
         date(formatString: "MMMM Do, YYYY")
         thumbnail {
           childImageSharp {
-            fixed {
-              ...GatsbyImageSharpFixed
+            fixed(quality: 100) {
+              ...GatsbyImageSharpFixed_withWebp
             }
           }
         }

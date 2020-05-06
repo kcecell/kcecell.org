@@ -40,7 +40,7 @@ const Activities = () => {
                 thumbnail {
                   childImageSharp {
                     fixed(height: 266, width: 288) {
-                      ...GatsbyImageSharpFixed
+                      ...GatsbyImageSharpFixed_withWebp
                     }
                   }
                 }

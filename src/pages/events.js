@@ -39,8 +39,8 @@ export default () => {
               slug
               thumbnail {
                 childImageSharp {
-                  fixed(height: 266, width: 288) {
-                    ...GatsbyImageSharpFixed
+                  fixed(height: 266, width: 288, quality: 100) {
+                    ...GatsbyImageSharpFixed_withWebp
                   }
                 }
               }

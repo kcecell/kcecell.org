@@ -47,8 +47,8 @@ export default () => {
               gitHub
               thumbnail {
                 childImageSharp {
-                  fixed(width: 130, height: 130) {
-                    ...GatsbyImageSharpFixed
+                  fixed(width: 130, height: 130, quality: 100) {
+                    ...GatsbyImageSharpFixed_withWebp
                   }
                 }
               }
