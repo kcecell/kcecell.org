@@ -61,8 +61,11 @@
     flex-direction: column;
     height: 100%;
   }
+  .cardHeader {
+    margin-top: 20px;
+  }
   .infoContainer {
-    margin: 20px;
+    margin: 0px 20px;
   }
   .imageContainer {
     margin: 20px 0;
