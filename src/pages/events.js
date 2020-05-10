@@ -28,7 +28,7 @@ export default () => {
     query {
       allMarkdownRemark(
         filter: { frontmatter: { category: { eq: "events" } } }
-        sort: { fields: frontmatter___eventNum, order: DESC }
+        sort: { fields: frontmatter___date, order: DESC }
       ) {
         edges {
           node {

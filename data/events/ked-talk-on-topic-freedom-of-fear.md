@@ -4,7 +4,6 @@ date: 2017-08-17T06:00:00.000Z
 slug: events/ked-talk-freedom-of-fear
 thumbnail: /assets/ked-talk-freedom-of-fear.jpg
 category: events
-eventNum: 1
 ---
 SE and TE students stepped away from their regular schedules to attend the KED Talk which was organised by KC E-Cell. It was conducted by the speaker, Dr Raviprakash, Founder and Head Trainer, Happy Thoughts Foundation, Mumbai. In this interactive session, an insight was given to the students about Entrepreneurship.
 

@@ -4,7 +4,6 @@ date: 2017-09-13T04:30:00.000Z
 slug: events/isdi-dice-bootcamp
 thumbnail: /assets/isdi-dice-bootcamp.jpg
 category: events
-eventNum: 2
 ---
 The Enthusiastic students from KC College of Engineering, Thane (E) were present on Saturday, September 09, 2017 for the Workshop organized by Mr Vishal Samal, Assistant Vice President- Outreach, ISDI. The workshop, which had its name as DICE Bootcamp @ ISME, was conducted at ISDI (Indian School of Design and Innovation), Elphinstone road, Mumbai. In this, an insight was given to the students about Design, Innovation, Creativity and Entrepreneurship.
 

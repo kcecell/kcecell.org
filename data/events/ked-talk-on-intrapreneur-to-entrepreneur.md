@@ -4,7 +4,6 @@ date: 2018-08-14T10:00:00.000Z
 slug: events/intrapreneur-to-entrepreneur
 thumbnail: /assets/intrapreneur-to-entrepreneur.jpg
 category: events
-eventNum: 9
 ---
 The budding entrepreneurs aka students of KCCOE stepped away from their regular schedules to attend the KED Talk which was organized by KC E-Cell. It was conducted by two awesome speakers, Mr Sagar Bhosale (Director, MFC Restaurants Pvt Ltd.) and Mr Ashok Karkera (Senior Manager, L&D, TATA Capital Financial Services Ltd.). In this interactive session, an insight was given to the students about Intrapreneurship and Entrepreneurship.
 

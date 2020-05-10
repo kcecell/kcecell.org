@@ -4,7 +4,6 @@ date: 2018-08-25T06:30:00.000Z
 slug: events/ai-cyber-security-workshop
 thumbnail: /assets/ai-cybersecurity-workshop.jpg
 category: events
-eventNum: 10
 ---
 The ever-enthusiastic crowd of KCCOE witnessed a evolutionary seminar, which gave an insight into AI and Cybersecurity, which was organized by KC E-cell, in association with North Star Tech Advancement & Research. The featured speaker of this fantastic seminar was Mr Jaisingh Gupta, MD & CEO, North Star Tech Advancement & Research. This seminar began at around 12 noon, where at first, the speaker started with the introduction and definition of hacking and hackers.
 

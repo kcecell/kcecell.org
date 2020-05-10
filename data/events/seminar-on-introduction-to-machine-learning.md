@@ -4,7 +4,6 @@ date: 2017-11-15T06:00:00.000Z
 slug: events/intro-to-machine-learning
 thumbnail: /assets/intro-to-machine-learning.jpg
 category: events
-eventNum: 6
 ---
 Machine Learning is the need of this hour and Data Scientists are in high demand in the market. Understanding this very demand of the market, KCCOE introduced its students to the vast world of Machine Learning through an introductory seminar, which was organised by KC E-Cell, which saw a whopping response from the ever-enthusiastic crowd of the college. The seminar commenced at around 11:30 am, with Mr Vikramank Singh (Software Engineer, Facebook) and Mr Abdurrab Khan, as the featured speakers of this seminar.
 

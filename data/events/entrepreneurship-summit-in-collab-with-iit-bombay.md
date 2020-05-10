@@ -4,7 +4,6 @@ date: 2018-01-23T08:45:00.000Z
 slug: events/entrepreneurship-summit-with-iit-bombay
 thumbnail: /assets/entrepreneurship-summit-with-iit-bombay.jpg
 category: events
-eventNum: 7
 ---
 The budding entrepreneurs aka students of KCCOE stepped away from their regular schedules to attend the Mega Workshop which was organised by KC E-Cell in collaboration with E-Cell, IIT Bombay. It was presided by the speaker, Mr Krushna Praharaj, Honorary member, CSI. In this interactive session, an insight was given to the students about Entrepreneurship.
 

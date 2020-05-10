@@ -42,5 +42,4 @@ collections:
       - { label: "Slug", name: "slug", widget: "string" }
       - { label: "Thumbnail", name: "thumbnail", widget: "image" }
       - { label: "Category", name: "category", widget: "string" }
-      - { label: "Event Number", name: "eventNum", widget: "number" }
       - { label: "Body", name: "body", widget: "markdown" }

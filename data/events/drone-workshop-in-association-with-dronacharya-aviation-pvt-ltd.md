@@ -4,7 +4,6 @@ date: 2017-09-15T05:15:00.000Z
 slug: events/drone-workshop
 thumbnail: /assets/drone-workshop.jpg
 category: events
-eventNum: 3
 ---
 Students freeing themselves from the shackles of their regular routine, were all set to touch the sky, thanks to the Drone workshop, which was organised by KC E-cell in association with Dronacharya Aviation Pvt Ltd. From this esteemed Drone firm, some members like Mr Tushar Pethe (Co- Founder), Mr Yash Patel(CTO), Mr Rohit Karle(CTO) and others were present to provide guidance about the drone technology, to all the aspiring engineers of KCCOE.
 

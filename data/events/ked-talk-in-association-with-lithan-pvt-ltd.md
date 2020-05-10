@@ -4,7 +4,6 @@ date: 2017-09-28T06:30:00.000Z
 slug: events/ked-talk-with-lithan
 thumbnail: /assets/ked-talk-with-lithan.jpg
 category: events
-eventNum: 4
 ---
 The budding entrepreneurs aka students of KCCOE stepped away from their regular schedules to attend the KED Talk which was organised by KC E-Cell. It was conducted by the speaker, Mr Sandesh Shetty of Lithan Pvt Ltd. In this interactive session, an insight was given to the students about Entrepreneurship.
 

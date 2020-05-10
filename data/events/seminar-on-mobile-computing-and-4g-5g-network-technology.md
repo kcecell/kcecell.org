@@ -4,7 +4,6 @@ date: 2018-01-26T06:30:00.000Z
 slug: events/mobile-computing-seminar
 thumbnail: /assets/mobile-computing-seminar.jpg
 category: events
-eventNum: 8
 ---
 The ever-enthusiastic crowd of KCCOE witnessed a revolutionary seminar, which gave an insight into Mobile Computing and 4G/5G Network, which was organised by IQAC and KC E-cell. The featured speaker of this fantastic seminar was Dr Alhad Kuwadekar, PhD- Mobile Computing, University of Glamorgan, UK (2010). This seminar began at around 12 noon, where at first, Dr Hansraj Guhilot, Principal, KCCOE, warmly welcomed the speaker by felicitating him and introduced the speaker to the audience present.
 

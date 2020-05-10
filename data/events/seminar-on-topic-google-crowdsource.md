@@ -4,7 +4,6 @@ date: 2017-10-14T05:00:00.000Z
 slug: events/google-crowdsource-event
 thumbnail: /assets/google-crowdsource-event.jpg
 category: events
-eventNum: 5
 ---
 Students from all branches and spheres of KCCOE showed their enthusiastic spirit by participating in the Google Crowdsource Event, which was organized by KC E-Cell. This was an event, organized by ardent KC E-Cell members, Jayesh Behera and Rishabh Yadav, which received a whopping response from KCCOE students, as the attendance marked was above 100. This session was all about differentiating real and fake images and putting the service to work at its best.
 
