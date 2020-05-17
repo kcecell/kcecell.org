@@ -1,7 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `KC Enterpreneurship Cell`,
-    content: `Emerging Enterpreneurship Cell of K.C College of Engineering and Management Studies and Research, Thane.`,
+    title: `KCCOE Enterpreneurship Cell`,
+    description: `Emerging Enterpreneurship Cell of K.C College of Engineering and Management Studies and Research, Thane.`,
+    author: "Ehtesham Siddiqui",
+    keywords: ["KC Entrepreneurship Cell", "KC Ecell", "KCCOE Ecell", "Ecell"],
+    siteUrl: "https://kcecell.org",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
