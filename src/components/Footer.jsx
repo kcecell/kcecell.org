@@ -22,7 +22,7 @@ const Footer = () => {
     <footer className={footerStyles.container}>
       <section className={footerStyles.logoContainer}>
         <Logo
-          link={"https://www.instagram.com/ecell_kccoe/"}
+          link={"https://www.instagram.com/kcecell_/"}
           img={instagramLogo}
           alt={"I"}
         />
@@ -44,7 +44,7 @@ const Footer = () => {
           />
         </Link>
         <Logo
-          link={"https://www.linkedin.com/company/kccoe-ecell"}
+          link={"https://www.linkedin.com/company/kcecell"}
           img={linkedinLogo}
           alt={"in"}
         />
@@ -57,7 +57,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
           className={footerStyles.anchor}
-          href="https://linkedin.com/in/siddiquiehtesham"
+          href="https://ehtesham.dev"
         >
           Ehtesham Siddiqui{" "}
         </a>
